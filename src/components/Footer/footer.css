@@ -1,0 +1,48 @@
+.footer{
+    margin-top:80px ;
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    padding-left: 200px;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left:10px ;
+}
+.purple-btn{
+    background-color: purple;
+}
+.blue-btn{
+    background-color: blue;
+}
+.gray-btn{
+    background-color: gray;
+}
+.btn-container{
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 425px){
+    .footer{
+        margin-top:50px ;
+        height: 60px;
+        background-color: black;
+        width: 100vw;
+        padding-left: 20px;
+        color:white;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@500&family=Open+Sans:wght@500&display=swap');
+.header{
+    height: 100px;
+    background-color: black;
+    /* width: 100%; */
+    padding-left: 200px;
+    font-family: 'Big Shoulders Inline Display'!important;
+    font-family: 'Open Sans', sans-serif!important;
+}
+.header >h1{
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+    font-size: 60px;
+}
+
+
+@media screen and (max-width: 425px){
+    .header{
+        height: 100px;
+        padding-left: 50px;
+    }
+    .header >h1{
+        margin: 0;
+        color: white;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+}
