@@ -18,6 +18,8 @@
     ],
     "rules": {
         "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF":1, "maxEOF": 1 }],
-        "comma-dangle": ["error", "never"]
+        "comma-dangle": ["error", "never"],
+        "import/no-extraneous-dependencies":"off"
+        // "import/no-unresolved": "off"
     }
 }
