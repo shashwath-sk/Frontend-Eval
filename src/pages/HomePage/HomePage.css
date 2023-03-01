@@ -1,0 +1,22 @@
+.home-container{
+    margin-left: 200px;
+    margin-right: 200px;
+    /* overflow: scroll; */
+    margin-bottom: 130px;
+}
+
+.events-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 425px){
+    .home-container{
+        margin-left: 50px;
+        margin-right: 500px;
+        /* overflow: scroll; */
+        margin-bottom: 40px;
+    }
+}
