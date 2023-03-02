@@ -35,7 +35,7 @@ export default function EventPage() {
     setIsRegistered(!isRegistered);
   };
   return event ? (
-    <div className="home-container">
+    <div className="home-containers">
       <div className="events-container">
         <Event key={event.id} Event={event} handleBookmark={handleBookmark} handleRegister={handleRegister} isRegistered={isRegistered} isBookmarked={isBookmarked} />
       </div>

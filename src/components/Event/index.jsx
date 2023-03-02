@@ -5,6 +5,7 @@ import * as React from 'react';
 import './event.css';
 import { useNavigate } from 'react-router-dom';
 import { getFormattedDateFromUtcDate } from '../../utils/common';
+import ThemeContext from '../../context/PageThemeContext';
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,6 +13,7 @@ export default function Events({
   Event, handleBookmark, handleRegister, isBookmarked, isRegistered
 }) {
   const navigate = useNavigate();
+  const { theme } = React.useContext(ThemeContext);
 
   const handleClick = () => {
     navigate(`/events/${Event.id}`);
@@ -22,7 +24,7 @@ export default function Events({
       <div className="img-container">
         <img className="event-img" src={Event.imgUrl} alt={Event.name} />
       </div>
-      <div className="event-info">
+      <div className={`event-info ${theme} `}>
         <p className="event-title">{Event.name}</p>
         <p className="event-description">{Event.description}</p>
         <p>

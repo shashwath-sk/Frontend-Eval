@@ -8,7 +8,6 @@ import './HomePage.css';
 
 export default function HomePage() {
   const [Events, setEvents] = React.useState();
-  // const [Events2, setEvents2] = React.useState();
   const navigate = useNavigate();
   const [filters, setFilters] = React.useState();
   const [searchBy, setSearchBy] = React.useState();
@@ -31,14 +30,14 @@ export default function HomePage() {
       const searchdata = Events.filter((event) => event.name.toLowerCase().includes(searchBy));
       setEvents(searchdata);
     }
-  }, [filters]);
+  }, [searchBy]);
 
   return Events ? (
     <div className="home-container">
       <FilterAndSearch setFilters={setFilters} setSearchBy={setSearchBy} />
       <div className="events-container">
         {Events.map((event) => (
-          <Event key={event.id} Event={event} />
+          <Event key={event.id} Event={event} isRegistered={event.isRegistered} isBookmarked={event.isBookmarked} />
         ))}
       </div>
 
