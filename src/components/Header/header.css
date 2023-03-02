@@ -1,29 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@500&family=Open+Sans:wght@500&display=swap');
 .header{
     height: 100px;
-    background-color: black;
-    /* width: 100%; */
-    padding-left: 200px;
+    padding-left: 220px;
     font-family: 'Big Shoulders Inline Display'!important;
-    font-family: 'Open Sans', sans-serif!important;
 }
 .header >h1{
     margin: 0;
     color: white;
-    padding-top: 10px;
-    font-size: 60px;
+    padding-top: 5px;
+    font-size: 80px;
+}
+.theme-blue{
+    background-color: blue;
+
+}
+.theme-purple{
+    background-color: purple;
+
+}
+.theme-gray{
+    background-color: gray;
+
+}
+.theme-black{
+    background-color: black;
+
 }
 
 
 @media screen and (max-width: 425px){
     .header{
         height: 100px;
-        padding-left: 50px;
+        padding-left: 70px;
     }
     .header >h1{
         margin: 0;
         color: white;
         padding-top: 20px;
-        font-size: 40px;
+        font-size: 60px;
     }
 }

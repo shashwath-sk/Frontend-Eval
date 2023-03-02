@@ -4,13 +4,28 @@
     margin: 20px 20px 0px 20px;
     border: 0.5px solid black;
 }
+.theme-blue{
+    background-color: blue;
+
+}
+.theme-pink{
+    background-color: purple;
+
+}
+.theme-gray{
+    background-color: gray;
+
+}
+.theme-black{
+    background-color: black;
+
+}
 .event-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding:10px 20px 0px 20px ;
-    background-color: rgb(1, 1, 5);
     color: white;
 }
 .img-container{

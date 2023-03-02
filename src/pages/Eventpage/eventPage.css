@@ -1,6 +1,7 @@
-.home-container{
-    margin-left: 200px;
-    margin-right: 200px;
+.home-containers{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 80px;
     /* overflow: scroll; */
 }
 
@@ -10,8 +11,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
 @media screen and (max-width: 425px){
     .home-container{
         margin-left: 50px;
